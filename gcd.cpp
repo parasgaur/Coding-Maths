@@ -11,8 +11,9 @@ int main()
     while(number1 != number2) {
         if(number1 > number2)
             number1 -= number2;
-        else
+        else if(number1 < number2) {
             number2 -= number1;
+        }
     }
 
     cout <<"GCD = "<<number1;
